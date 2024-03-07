@@ -12,10 +12,12 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="stylesheet" href="print.css" media="print">
 
     <!-- Scripts -->
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
     <script src="script.js" defer></script>
     
     <title>EWU Fight Song</title>
@@ -24,9 +26,15 @@
     
 <main>
 
+  <img src="assets/banner.jpg" alt="EWU Football Game">
+
     <h1>EWU Fight Song</h1>
 
-<audio src="https://assets.codepen.io/16425/ewufightsong.mp3" controls loop autoplay></audio>
+<audio crossorigin playsinline>
+  <source src="https://assets.codepen.io/16425/ewufightsong.mp3" type="audio/mp3">
+</audio>
+
+<article>
 
 <figure>
   <p>Go, Eagles, Go</p>
@@ -46,9 +54,11 @@
 <figure>
   <p>EASTERN!</p>
   <p>Eastern Eagles GO FIGHT WIN!</p>
+  <a href="https://en.wikipedia.org/wiki/Eastern_Washington_Eagles">Learn More About Eastern</a>
 </figure>
 
-<a href="https://en.wikipedia.org/wiki/Eastern_Washington_Eagles">Learn More About Eastern</a>
+
+</article>
 
 </main>
 
